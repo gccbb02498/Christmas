@@ -16,7 +16,7 @@ function snowCanvas() {
     snowCanvas.width = document.body.offsetWidth
     snowCanvas.height = window.innerHeight
     
-    document.getElementsByClassName("block")[0].append(snowCanvas)
+    document.getElementsByTagName('body')[0].append(snowCanvas)
     this.canvas = snowCanvas
     this.ctx = snowCanvas.getContext('2d')
     window.onresize = function () {
